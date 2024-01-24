@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#calculator {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  background-color: #000000;
+
+}
+
+#display {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #d1d1d6;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  background-color: #454545;
+}
+
+/* Styles for dark mode */
+.dark-mode{
+  background-color: black;
+  color: rgb(248, 6, 6);
+}
+.dark-mode #calculator{
+  background-color: white;
+  color: rgb(248, 6, 6);
+}
+
+.dark-mode button {
+  /* Additional styling for buttons in dark mode */
+}
+.operator{
+  background-color: orange;
+}
+
+.abc
+{background-color: grey;}
